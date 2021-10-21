@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 #import the model
-pipe=pickle.load(open('pipe.pkl','wb'))
+pipe=pickle.load(open('pipe.pkl','rb'))
 data=pickle.load(open('data.pkl','rb'))
 
 st.title('Restaurant rating predictor')
